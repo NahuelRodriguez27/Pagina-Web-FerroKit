@@ -192,15 +192,26 @@ img {
     text-decoration: underline;
 }
 
-.seccion-mapa {
-    display: flex;
-    margin: 20px;
-    align-items: center;
-    justify-content: space-between;
+.texto-selector {
+    margin-left: 15px;
+    text-decoration: underline;
 }
 
+
 .mapa {
-    width: 50%;
+    overflow:hidden;
+    padding-bottom:400px; 
+    position:relative;
+    height:0;
+    
+}
+
+.mapa iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 
@@ -261,30 +272,39 @@ img {
     padding: 5px;
 }
 
+.img-idea:hover {
+    transform: scale(1.1)
+}
+
 
 /* Contacto */
 
+.titulo-contacto h2 {
+    margin: 30px;
+    text-align: center;
+    background-color: #f2f2f2;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: underline;
+}
 
+.info-ayuda {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+svg {
+    aspect-ratio: 3/2;
+}
+.--bs-body-bg{
+    background-color: #D5D8DC;
+}
+.col {
+    margin: 30px;
+}
 
 /* Footer */
 
@@ -364,36 +384,4 @@ img {
     color: #f2f2f2;
     opacity: 0.3;
     text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Seccion Sucursales */
-.mapa {
-    overflow:hidden;
-    padding-bottom:40%;
-    position:relative;
-    height:0;
-}
-
-.mapa iframe {
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
 }
