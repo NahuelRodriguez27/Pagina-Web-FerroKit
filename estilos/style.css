@@ -10,7 +10,7 @@
 /* Tipografía */
 @font-face {
     font-family: 'Roboto';
-    src: url(/letra/roboto/Roboto-Regular.ttf);
+    src: url(../letra/roboto/Roboto-Regular.ttf);
 }
 
 
