@@ -234,6 +234,12 @@ img {
     border-radius: 5px;
 }
 
+.info-item button {
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .info-item .precio {
     padding: 5px;
     
@@ -332,6 +338,8 @@ img {
 .info-item-ideas button {
     font-size: 15px;
     padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .img-idea:hover {
@@ -407,7 +415,7 @@ svg {
     background-position: center;
     background-size: 40%;
     background-repeat: no-repeat;
-    margin: 1rem;
+    margin: 1.5rem;
 }
 
 .social-icon:hover{
