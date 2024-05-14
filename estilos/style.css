@@ -124,7 +124,7 @@ i {
 
     li a:hover, li a.active{
         background: none;
-        color: red;
+        background-color: gray;
     }
 
     #check:checked ~ul {
