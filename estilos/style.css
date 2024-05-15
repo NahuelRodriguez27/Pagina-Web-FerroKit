@@ -10,7 +10,7 @@
 /* Tipografía */
 @font-face {
     font-family: 'Roboto';
-    src: url(/letra/roboto/Roboto-Regular.ttf);
+    src: url(../letra/roboto/Roboto-Regular.ttf);
 }
 
 
@@ -69,6 +69,68 @@ li a:hover {
     background-color: grey;
     border-radius: 15px;
     padding: 8px;
+}
+
+i {
+    color: white;
+    cursor: pointer;
+    display: none;
+    margin-right: 20px;
+}
+
+.checkbtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px)  {
+    .nombre {
+        padding-left: 20px;
+    }
+    .menu-nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn {
+        display: block;
+    }
+    
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #1A1A1A;
+        top: 16%;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+
+    .menu-nav ul li {
+        display: block;
+        margin: 10px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    li a:hover, li a.active{
+        background: none;
+        background-color: gray;
+    }
+
+    #check:checked ~ul {
+        left: 0;
+    }
+
 }
 
 img {
@@ -146,7 +208,7 @@ img {
 
 .container-items-productos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(45vh, 1fr));
     grid-gap: 30px;
     margin: auto;
     text-align: center;
@@ -170,6 +232,12 @@ img {
     color: black;
     padding: 15px;
     border-radius: 5px;
+}
+
+.info-item button {
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .info-item .precio {
@@ -270,6 +338,8 @@ img {
 .info-item-ideas button {
     font-size: 15px;
     padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .img-idea:hover {
@@ -345,7 +415,7 @@ svg {
     background-position: center;
     background-size: 40%;
     background-repeat: no-repeat;
-    margin: 1rem;
+    margin: 1.5rem;
 }
 
 .social-icon:hover{
