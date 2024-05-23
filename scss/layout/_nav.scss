@@ -1,0 +1,61 @@
+
+.menu-nav {
+    display: flex;
+    padding-right: 25px;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 21px;
+    background-color: #1A1A1A;
+    height: 85px;
+    padding: 5px;
+    .nombre {
+        color: white;
+        font-size: 45px;
+        margin-right: auto;
+        text-decoration: none;
+        padding: 15px;
+        padding-bottom: 20px;
+    }
+    i {
+        color: white;
+        cursor: pointer;
+        display: none;
+        margin-right: 20px;
+        
+    }
+    .checkbtn {
+        display: none;
+    }
+    
+    #check {
+        display: none;
+    }
+    ul {
+        li {
+            display: inline-block;
+            padding: 0 20px;
+            margin-top: 10px;
+            a {
+                color: white;
+                text-decoration: none;
+                transition: all 0.3;
+            }
+            li a:hover {
+                transform: scale(1.2);
+                background-color: grey;
+                border-radius: 15px;
+                padding: 8px;
+            }
+        }
+    
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+.title-sucursal {
+    h2 {
+    margin: 20px;
+    background-color: $color-ideas;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: underline;
+    }
+}
+
+.texto-selector {
+    margin-left: 15px;
+    text-decoration: underline;
+}
+
+.mapa {
+    overflow: hidden;
+    padding-bottom: 400px;
+    position: relative;
+    height: 0;
+
+    iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    }
+}
+
+.col {
+    margin: 30px;
+}
