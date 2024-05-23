@@ -9,8 +9,8 @@
 
 /* Tipografía */
 @font-face {
-    font-family: 'Roboto';
-    src: url(/letra/roboto/Roboto-Regular.ttf);
+    font-family: "Roboto";
+    src: url(../letra/roboto/Roboto-Regular.ttf);
 }
 body {
   background-color: #D5D8DC;
