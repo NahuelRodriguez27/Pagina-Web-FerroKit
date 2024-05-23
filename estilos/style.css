@@ -9,8 +9,8 @@
 
 /* Tipografía */
 @font-face {
-  font-family: "Roboto";
-  src: url(../letra/roboto/Roboto-Regular.ttf);
+    font-family: 'Roboto';
+    src: url(/letra/roboto/Roboto-Regular.ttf);
 }
 body {
   background-color: #D5D8DC;
@@ -72,6 +72,68 @@ body {
   background-color: grey;
   border-radius: 15px;
   padding: 8px;
+}
+
+i {
+    color: white;
+    cursor: pointer;
+    display: none;
+    margin-right: 20px;
+}
+
+.checkbtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px)  {
+    .nombre {
+        padding-left: 20px;
+    }
+    .menu-nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn {
+        display: block;
+    }
+    
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #1A1A1A;
+        top: 16%;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+
+    .menu-nav ul li {
+        display: block;
+        margin: 10px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    li a:hover, li a.active{
+        background: none;
+        background-color: gray;
+    }
+
+    #check:checked ~ul {
+        left: 0;
+    }
+
 }
 
 .quienes-somos {
@@ -149,6 +211,94 @@ img {
   border-radius: 5px;
 }
 
+/* Seccion Productos */
+
+.texto-productos h2 {
+    display: inline-block;
+    margin: 20px;
+    font-size: 1.7rem;
+    text-decoration: underline;
+}
+
+.texto-productos p {
+    font-size: 1.3rem;
+    margin: 18px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container-items-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-gap: 30px;
+    margin: auto;
+    text-align: center;
+    width: 75%;
+}
+
+.item {
+    margin: 20px 20px;
+}
+.foto-producto {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    aspect-ratio: 3/2;
+    border-radius: 5px;
+}
+
+.info-item {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.info-item .precio {
+    padding: 5px;
+    
+}
+
+.foto-producto:hover {
+    transform: scale(1.1)
+}
+
+/* Sucursales */
+
+.title-sucursal h2 {
+    margin: 20px;
+    background-color: #f2f2f2;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.texto-selector {
+    margin-left: 15px;
+    text-decoration: underline;
+}
+
+
+.mapa {
+    overflow:hidden;
+    padding-bottom:400px; 
+    position:relative;
+    height:0;
+    
+}
+
+.mapa iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
 /* Ideas */
 .main-ideas h2 {
   margin: 30px;
@@ -201,10 +351,8 @@ img {
   padding: 5px;
 }
 .info-item-ideas button {
-  font-size: 15px;
-  padding: 5px;
-  text-decoration: none;
-  cursor: pointer;
+    font-size: 15px;
+    padding: 5px;
 }
 
 .quienes-somos {
@@ -450,30 +598,79 @@ svg {
   nav ul {
     position: fixed;
     width: 100%;
-    height: 100vh;
-    background: #1a1a1a;
-    top: 16%;
-    left: 100%;
-    text-align: center;
-    transition: all 0.5s;
-    z-index: 1;
-  }
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-    line-height: 30px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-  nav ul li a:hover, nav ul li a.active {
-    background: none;
-    background-color: gray;
-  }
-  nav ul #check:checked ~ ul {
-    left: 0;
-  }
+    position: absolute;
+    bottom: 100;
+    padding: 2rem 8%;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-/* Variables */
+}
 
-/*# sourceMappingURL=style.css.map */
+.social-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.footer-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url(../fotos/FacebookBlanco.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icon:hover{
+    background-color: #121212;
+    filter: invert(1);
+
+}
+
+.social-icon:nth-of-type(2){
+    background-image: url(../fotos/InstagramBlanco.png);
+}
+
+.social-icon:nth-of-type(3){
+    background-image: url(../fotos/TwitterBlanco.png);
+}
+
+
+
+.footer-menu-container {
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 18px;
+}
+
+.menu-item {
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.menu-item:hover {
+    opacity: 1;
+}
+
+.copyright {
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+}
