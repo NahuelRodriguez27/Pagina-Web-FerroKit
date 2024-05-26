@@ -2,15 +2,15 @@
 
 /* Tipografía */
 @font-face {
-    font-family: "Roboto";
-    src: url(../letra/roboto/Roboto-Regular.ttf);
+    font-family: 'Roboto';
+    src: url('/letra/roboto/Roboto-Regular.ttf');
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;  
-    font-family: "Roboto";
+    font-family: 'Roboto';
 }
 
 
