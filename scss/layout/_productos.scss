@@ -27,6 +27,9 @@
 
 .item {
     margin: 20px 20px;
+    box-shadow: $box-shadow;
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
 }
 
 .foto-producto {
