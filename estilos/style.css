@@ -1,10 +1,5 @@
 @charset "UTF-8";
 /* Variables */
-/* Tipografía */
-@font-face {
-  font-family: "Roboto";
-  src: url("/letra/roboto/Roboto-Regular.ttf");
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,6 +7,11 @@
   font-family: "Roboto";
 }
 
+/* Tipografía */
+@font-face {
+  font-family: "Roboto";
+  src: url(../letra/roboto/Roboto-Regular.ttf);
+}
 body {
   background-color: #D5D8DC;
   color: black;
