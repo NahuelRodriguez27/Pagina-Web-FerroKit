@@ -21,19 +21,19 @@
             display: inline-block;
             padding: 0 20px;
             margin-top: 10px;
+    
             a {
                 color: white;
                 text-decoration: none;
-                transition: all 0.3;
-            }
-            li a:hover {
-                transform: scale(1.2);
-                background-color: grey;
-                border-radius: 15px;
-                padding: 8px;
+                transition: all 0.3s;  
+                &:hover {
+                    transform: scale(1.2);
+                    background-color: grey;
+                    border-radius: 15px;
+                    padding: 8px;
+                }
             }
         }
-    
     }
 }
     i {

@@ -53,9 +53,9 @@ body {
 .menu-nav ul li a {
   color: white;
   text-decoration: none;
-  transition: all 0.3;
+  transition: all 0.3s;
 }
-.menu-nav ul li li a:hover {
+.menu-nav ul li a:hover {
   transform: scale(1.2);
   background-color: grey;
   border-radius: 15px;
